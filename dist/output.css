@@ -629,6 +629,18 @@ video {
   right: 1rem;
 }
 
+.top-full {
+  top: 100%;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1848,6 +1860,11 @@ video {
   padding: 1rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1881,11 +1898,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .pt-20 {
