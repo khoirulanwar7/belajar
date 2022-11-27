@@ -629,16 +629,12 @@ video {
   right: 1rem;
 }
 
-.top-full {
-  top: 100%;
-}
-
 .right-5 {
   right: 1.25rem;
 }
 
-.top-1 {
-  top: 0.25rem;
+.top-full {
+  top: 100%;
 }
 
 .isolate {
