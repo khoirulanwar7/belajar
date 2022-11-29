@@ -21,3 +21,11 @@
 .hamburger-active > span:nth-child(3){
     @apply -rotate-45;
 }
+
+.judul{
+    @apply text-start font-bold text-slate-900 text-xl md:text-2xl lg:text-3xl mb-1 md:mb-6 lg:mb-8;
+}
+
+.paragraf{
+    @apply text-base text-slate-600 font-medium text-start tracking-wider mb-4 md:mb-8 lg:mb-10 md:text-lg lg:text-xl;
+}
