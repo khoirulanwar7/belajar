@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="text-blue-600 font-semibold">tutorCupu.</title>
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../dist/output.css">
+  </head>
+
+  <body class="bg-blue-50">
+
+    <header id="header" class="top-0 left-0 z-10 flex items-center w-full bg-transparent absolute">
+      <div class="container">
+        <div class="relative py-2 flex items-center justify-between">
+          <div class="px-4 mx-6">
+            <a href="" class="text-blue-600 font-bold text-lg md:text-xl lg:text-2xl">tutorCupu.</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+              <span class="transition duration-300 ease-in-out hamburger-line origin-bottom-left"></span>
+              <span class="transition duration-300 ease-in-out hamburger-line"></span>
+              <span class="transition duration-300 ease-in-out hamburger-line origin-top-left"></span>
+            </button>
+            <nav id="nav-menu"
+              class="hidden absolute py-5 lg:shadow-none lg:rounded-none bg-white shadow-lg rounded-lg max-w-[250px] w-full right-5 top-full lg:block lg:static lg:bg-transparent lg:max-w-full">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="../../index.html" class="text-lg text-slate-600 py-2 mx-6 flex group-hover:text-blue-600">
+                    Home
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="../tutorial.html" class="text-lg text-slate-600 py-2 mx-6 flex group-hover:text-blue-600">
+                    Tutorial
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="#" class="text-lg text-slate-600 py-2 ml-6 flex group-hover:text-blue-600">
+                    Group Diskusi
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="tutorial" class="pt-24 md:pt-20 lg:pt-36 md:pb-24 lg:pb-32 min-h-screen">
+      <div class="container mx-auto">
+        <div class="w-full px-4">
+          <div class="max-w-4xl flex flex-wrap bg-white rounded-xl justify-center mx-auto text-center mb-10 shadow-md">
+            <div class="w-full flex mx-2 mt-3 md:mx-8 lg:mx-10">
+              <div class="w-1/3 m-1">
+                <div class="w-2/3 mx-auto">
+                  <img src="../../img/mysql.png" alt="">
+                </div>
+              </div>
+              <div class="w-2/3 m-1 self-center">
+                <!-- <h1 class="text-base font-bold md:text-2xl text-start lg:text-3xl mb-2">
+                  Tutorial Pemrogaman Java untuk Pemula
+                </h1> -->
+                <h1 class="text-base font-bold md:text-2xl text-start lg:text-3xl mb-2">
+                  Memahami Perintah DQL
+                </h1>
+                <p class="text-xs md:text-base lg:text-lg text-start text-slate-600">Kumpulan tutorial
+                  belajar MySQL untuk pemula, dari dasar hingga mahir.
+                </p>
+              </div>
+            </div>
+
+            <span class="w-5/6 h-[2px] bg-slate-300 mt-5 mb-5 md:mb-8 lg:mb-10"></span>
+
+            <div class="w-full flex mx-2 md:mx-8 lg:mx-10 mb-5">
+              <div class="w-full overflow-auto mx-4 flex flex-wrap justify-start">
+                <div class="w-full h-52 md:h-[388px] md:mx-12 mb-5">
+                  <iframe class="w-full min-h-full border mx-auto mb-7 md:mb-14"
+                    src="https://www.youtube.com/embed/SWs0j2LzcD4" allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="w-full mx-3 md:mx-10">
+                  <p class="paragraf">
+                    <i><strong>Data Query Language</strong></i> (DQL) adalah perintah SQL untuk query data.
+                  </p>
+                  <p class="paragraf">
+                    Perintah DQL yaitu
+                  </p>
+
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">SELECT -> digunakan untuk melakukan query data dari database</p>
+                  </div>
+                  <p class="paragraf">Cara penulisan perintah SELECT</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">SELECT field1, field2, field3, ...</p>
+                    <p class="text-base font-mono text-slate-600">FROM nama_table;</p>
+                  </div>
+                  <p class="paragraf">Jika ingin membaca semua field table gunakan tanda *</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">SELECT *</p>
+                    <p class="text-base font-mono text-slate-600">FROM nama_table;</p>
+                  </div>
+                  <p class="paragraf">Misal kita telah membuat database <strong>universitas</strong> dengan table <strong>mahasiswa</strong> seperti materi DDL dan mengisi nilai dengan materi
+                  DML</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600"><span class="text-violet-700">INSERT INTO</span> mahasiswa</p>
+                    <p class="text-base font-mono text-slate-600">VALUES</p>
+                    <p class="text-base font-mono text-slate-600">(<span class="text-blue-500">21400200</span>,<span class="text-blue-500">"faqih"</span>,<span class="text-blue-500">"bandung"</span>),</p>
+                    <p class="text-base font-mono text-slate-600">(<span class="text-blue-500">21400201</span>,<span class="text-blue-500">"ina"</span>,<span class="text-blue-500">"jakarta"</span>),</p>
+                    <p class="text-base font-mono text-slate-600">(<span class="text-blue-500">21400202</span>,<span class="text-blue-500">"anto"</span>,<span class="text-blue-500">"semarang"</span>),</p>
+                    <p class="text-base font-mono text-slate-600">(<span class="text-blue-500">21400203</span>,<span class="text-blue-500">"dani"</span>,<span class="text-blue-500">"padang"</span>);</p>
+                  </div>
+                  <p class="paragraf">Kita gunakan perintah SELECT untuk mengambil data mahasiswa dan menampilkannya di layar</p>
+                  <div class="mb-3 md:mb-8 w-full">
+                    <img src="../../img/mysql/tutor-5/tutor-1.png" alt="XAMPP img" class="m-1 border mx-auto shadow-md">
+                  </div>
+                  <p class="paragraf">Jika hanya ingin menampilkan beberapa atribut dari mahasiswa maka harus ditentukan field yang ingin di-SELECT</p>
+                  <div class="mb-3 md:mb-8 w-full">
+                    <img src="../../img/mysql/tutor-5/tutor-2.png" alt="XAMPP img" class="m-1 border mx-auto shadow-md">
+                  </div>
+                  <p class="paragraf">Ada beberapa klausa dan operator penting untuk melakukan filter dan aggregasi dari perintah SELECT antara lain</p>
+                  <div class="text-start px-4 py-3 mb-3 md:mb-6">
+                    <table class="w-full">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="py-2 px-4 border border-black">Klausa / Operator</th>
+                          <th scope="col" class="py-2 px-4 border border-black">Makna
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            WHERE</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            Filter pencarian data</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            AND, OR, NOT</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            Operator pelengkap WHERE</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            LIKE</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            Operator pelengkap WHERE</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            ORDER BY</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            Mengurutkan data secara A-Z / Z-A</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            LIMIT</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            Membatasi hasil pencarian</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            AGGREGATION</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            Fungsi agregasi</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            GROUP BY</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">
+                            Mengelompokkan nilai berdasarkan field</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <h1 class="judul">WHERE</h1>
+                  <p class="paragraf">WHERE digunakan sebagai pelengkap SELECT untuk filter pencarian data.</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">SELECT field1, field2, field3, ...</p>
+                    <p class="text-base font-mono text-slate-600">FROM nama_table</p>
+                    <p class="text-base font-mono text-slate-600">WHERE kondisi</p>
+                  </div>
+                  <p class="paragraf">Misal mencari data mahasiswa yang bernama <strong>anto</strong></p>
+                  <div class="mb-3 md:mb-8 w-full">
+                    <img src="../../img/mysql/tutor-5/tutor-3.png" alt="XAMPP img" class="m-1 border mx-auto shadow-md">
+                  </div>
+
+                  <h1 class="judul">AND, OR, NOT</h1>
+                  <p class="paragraf">Klausa WHERE dapat dikombinasikan dengan operator AND, OR dan NOT</p>
+                  <p class="paragraf">Operator AND akan menghasilkan nilai TRUE jika kedua pernyataan bernilai benar</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">SELECT field1, field2, field3, ...</p>
+                    <p class="text-base font-mono text-slate-600">FROM nama_table</p>
+                    <p class="text-base font-mono text-slate-600">WHERE kondisi1 AND kondisi2</p>
+                  </div>
+                  <p class="paragraf">WHERE kondisi1 AND kondisi2</p>
+                  <div class="mb-3 md:mb-8 w-full">
+                    <img src="../../img/mysql/tutor-5/tutor-4.png" alt="XAMPP img" class="m-1 border mx-auto shadow-md">
+                  </div>
+                  <p class="paragraf">Sekarang kita coba cari data mahasiswa yang bernama anto dan beralamat jakarta</p>
+                  <div class="mb-3 md:mb-8 w-full">
+                    <img src="../../img/mysql/tutor-5/tutor-5.png" alt="XAMPP img" class="m-1 border mx-auto shadow-md">
+                  </div>
+                  <p class="paragraf">Tidak mendapatkan nilai apapun karena saat pencarian terdapat 2 pernyataan yang bernilai TRUE dan FALSE <strong>(mahasiswa anto
+                  di database hanya berasal dari semarang)</strong></p>
+                  <p class="paragraf">Operator OR akan menghasilkan nilai TRUE jika salah satu pernyataan bernilai benar</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">SELECT field1, field2, field3, ...</p>
+                    <p class="text-base font-mono text-slate-600">FROM nama_table</p>
+                    <p class="text-base font-mono text-slate-600">WHERE kondisi1 OR kondisi2</p>
+                  </div>
+                  <p class="paragraf">Jika kita mencari data mahasiswa yang bernama anto atau mahasiswa yang beralamat jakarta</p>
+                  <div class="mb-3 md:mb-8 w-full">
+                    <img src="../../img/mysql/tutor-5/tutor-6.png" alt="XAMPP img" class="m-1 border mx-auto shadow-md">
+                  </div>
+                  <p class="paragraf">Maka dengan operator OR akan dicari data mahasiswa yang bernama anto dan mahasiswa yang berasal dari jakarta</p>
+                  <p class="paragraf">Operator NOT akan menghasilkan nilai TRUE jika pernyataan bernilai salah</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">SELECT field1, field2, field3, ...</p>
+                    <p class="text-base font-mono text-slate-600">FROM nama_table</p>
+                    <p class="text-base font-mono text-slate-600">WHERE NOT kondisi</p>
+                  </div>
+                  <p class="paragraf">Contoh, mencari data mahasiswa yang <strong>tidak bernama anto</strong></p>
+                  <div class="mb-3 md:mb-8 w-full">
+                    <img src="../../img/mysql/tutor-5/tutor-6.png" alt="XAMPP img" class="m-1 border mx-auto shadow-md">
+                  </div>
+                  <h1 class="judul">LIKE</h1>
+                  <p class="paragraf">Klausa WHERE dapat dikombinasikan dengan operator LIKE untuk mencari data yang lebih spesifik berdasarkan pola</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">SELECT field1, field2, field3, ...</p>
+                    <p class="text-base font-mono text-slate-600">FROM nama_table</p>
+                    <p class="text-base font-mono text-slate-600">WHERE kondisi LIKE '%pola%';</p>
+                  </div>
+                  <p class="paragraf">Mencari data mahasiswa yang mempunyai nama dengan pola <strong>‘an’</strong></p>
+                  <div class="mb-3 md:mb-8 w-full">
+                    <img src="../../img/mysql/tutor-5/tutor-7.png" alt="XAMPP img" class="m-1 border mx-auto shadow-md">
+                  </div>
+                  <p class="paragraf">Data yang dihasilkan adalah nama anto dan dani yang mempunyai komposisi huruf ‘an’</p>
+
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="w-full px-4">
+          <div
+            class="max-w-4xl flex flex-wrap bg-white rounded-lg justify-center border mx-auto text-center mb-10 shadow-md">
+            <div class="w-full flex mx-2 mt-3 md:mx-8 lg:mx-10">
+              <h1 class="mx-4 text-base font-semibold md:text-lg lg:text-xl mt-3">Daftar Isi: </h1>
+            </div>
+            <span class="w-5/6 h-[2px] bg-slate-300 mt-5 mb-5 md:mb-8 "></span>
+            <div class="w-full flex mx-2 md:mx-8 lg:mx-10 mb-5">
+              <div class="w-full mx-3 flex flex-wrap justify-start">
+                <a href="mysql-materi-1.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  1: Cara Install XAMPP
+                </a>
+                <a href="mysql-materi-2.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  2: Tutorial MySQL untuk Pemula
+                </a>
+                <a href="mysql-materi-3.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  3: Memahami Perintah DDL
+                </a>
+                <a href="mysql-materi-4.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  4: Memahami Perintah DML
+                </a>
+                <button type="button" disabled
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base text-white border bg-blue-600 shadow-md ">
+                  5: Memahami Perintah DQL
+                </button>
+                <a href="mysql-materi-6.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  6: Memahami Perintah DCL
+                </a>
+                <a href="mysql-materi-7.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  7: Memahami Perintah TCL
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="bg-slate-700 py-8 px-4 text-sm md:text-base text-white text-center">
+      Dibuat dengan penuh cinta by MahasiswaKupuKupu😁
+    </footer>
+
+    <script src="../../dist/js/script.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="text-blue-600 font-semibold">tutorCupu.</title>
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../dist/output.css">
+  </head>
+
+  <body class="bg-blue-50">
+
+    <header id="header" class="top-0 left-0 z-10 flex items-center w-full bg-transparent absolute">
+      <div class="container">
+        <div class="relative py-2 flex items-center justify-between">
+          <div class="px-4 mx-6">
+            <a href="" class="text-blue-600 font-bold text-lg md:text-xl lg:text-2xl">tutorCupu.</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+              <span class="transition duration-300 ease-in-out hamburger-line origin-bottom-left"></span>
+              <span class="transition duration-300 ease-in-out hamburger-line"></span>
+              <span class="transition duration-300 ease-in-out hamburger-line origin-top-left"></span>
+            </button>
+            <nav id="nav-menu"
+              class="hidden absolute py-5 lg:shadow-none lg:rounded-none bg-white shadow-lg rounded-lg max-w-[250px] w-full right-5 top-full lg:block lg:static lg:bg-transparent lg:max-w-full">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="../../index.html" class="text-lg text-slate-600 py-2 mx-6 flex group-hover:text-blue-600">
+                    Home
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="../tutorial.html" class="text-lg text-slate-600 py-2 mx-6 flex group-hover:text-blue-600">
+                    Tutorial
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="#" class="text-lg text-slate-600 py-2 ml-6 flex group-hover:text-blue-600">
+                    Group Diskusi
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="tutorial" class="pt-24 md:pt-20 lg:pt-36 md:pb-24 lg:pb-32 min-h-screen">
+      <div class="container mx-auto">
+        <div class="w-full px-4">
+          <div class="max-w-4xl flex flex-wrap bg-white rounded-xl justify-center mx-auto text-center mb-10 shadow-md">
+            <div class="w-full flex mx-2 mt-3 md:mx-8 lg:mx-10">
+              <div class="w-1/3 m-1">
+                <div class="w-2/3 mx-auto">
+                  <img src="../../img/mysql.png" alt="">
+                </div>
+              </div>
+              <div class="w-2/3 m-1 self-center">
+                <!-- <h1 class="text-base font-bold md:text-2xl text-start lg:text-3xl mb-2">
+                  Tutorial Pemrogaman Java untuk Pemula
+                </h1> -->
+                <h1 class="text-base font-bold md:text-2xl text-start lg:text-3xl mb-2">
+                  Memahami Perintah DDL
+                </h1>
+                <p class="text-xs md:text-base lg:text-lg text-start text-slate-600">Kumpulan tutorial
+                  belajar MySQL untuk pemula, dari dasar hingga mahir.
+                </p>
+              </div>
+            </div>
+
+            <span class="w-5/6 h-[2px] bg-slate-300 mt-5 mb-5 md:mb-8 lg:mb-10"></span>
+
+            <div class="w-full flex mx-2 md:mx-8 lg:mx-10 mb-5">
+              <div class="w-full overflow-auto mx-4 flex flex-wrap justify-start">
+                <div class="w-full h-52 md:h-[388px] md:mx-12 mb-5">
+                  <iframe class="w-full min-h-full border mx-auto mb-7 md:mb-14"
+                    src="https://www.youtube.com/embed/SWs0j2LzcD4" allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="w-full mx-3 md:mx-10">
+                  <p class="paragraf">
+                    <i><strong>Data Definition Language</strong></i> (DDL) merupakan perintah SQL untuk membuat, merubah
+                    atau menghapus struktur database
+                  </p>
+                  <p class="paragraf">
+                    Perintah DDL antara lain
+                  </p>
+
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">CREATE -> Membuat database</p>
+                    <p class="text-base font-mono text-slate-600">ALTER -> Merubah struktur database</p>
+                    <p class="text-base font-mono text-slate-600">TRUNCATE -> Menghapus semua record database</p>
+                    <p class="text-base font-mono text-slate-600">DROP -> Menghapus table/database</p>
+                    <p class="text-base font-mono text-slate-600">RENAME -> Merubah nama table</p>
+                  </div>
+                  <h1 class="text-2xl font-bold text-start text-slate-900 mb-2">1 Perintah CREATE</h1>
+                  <h1 class="judul">Membuat database</h1>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">CREATE DATABASE nama_database</p>
+                  </div>
+                  <p class="paragraf">Contoh membuat database <strong>universitas</strong></p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600"><span class="text-violet-700">CREATE DATABASE</span>
+                      universitas
+                    </p>
+                  </div>
+                  <h1 class="judul">Membuat Table</h1>
+                  <p class="paragraf">Database berisi table untuk menyimpan entitas. Table terdiri dari field (kolom)
+                    dan record (baris data). Perintah <strong>CREATE</strong>
+                    digunakan untuk membuat table
+                  </p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">CREATE TABLE nama_database (</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;field1 tipe_data,</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;field2 tipe_data,</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;field3 tipe_data</p>
+                    <p class="text-base font-mono text-slate-600">);</p>
+                  </div>
+                  <p class="paragraf">Contoh</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600"><span class="text-violet-700">CREATE TABLE</span>
+                      mahasiswa (</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;nim <span
+                        class="text-violet-700">INT</span>(<span class="text-blue-500">10</span>),</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;nama <span
+                        class="text-violet-700">VARCHAR</span>(<span class="text-blue-500">100</span>),</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;alamat <span
+                        class="text-violet-700">VARCHAR</span>(<span class="text-blue-500">100</span>)</p>
+                    <p class="text-base font-mono text-slate-600">);</p>
+                  </div>
+                  <p class="paragraf">Kita telah membuat table <strong>mahasiswa</strong> dengan 3 <i>field</i></p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">INT(10) -> tipe data integer dengan maksimal 10 digit angka</p>
+                    <p class="text-base font-mono text-slate-600">VARCHAR(100) -> tipe data varchar dengan maksimal 100 karakter</p>
+                  </div>
+                  <P class="paragraf">Tipe data digunakan untuk mendefinisikan tipe dari <i>field</i> di table. Beberapa tipe data yang sering digunakan</P>
+                  <div class="text-start px-4 py-3 mb-3 md:mb-6">
+                    <table class="w-full">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="py-2 px-4 border border-black">Tipe Data</th>
+                          <th scope="col" class="py-2 px-4 border border-black">Keterangan</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">INT</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">Menyimpan nilai integer</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">FLOAT</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">Menyimpan nilai float</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">VARCHAR</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">Menyimpan nilai string</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">CHAR</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">Menyimpan nilai satu karakter</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">DATE</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">Menyimpan nilai WAKTU</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">TEXT</td>
+                          <td class="py-2 px-4 border text-center border-black text-slate-700">Menyimpan nilai teks</td>
+                        </tr>
+                      </tbody>
+                      <tbody></tbody>
+                    </table>
+                  </div>
+                  <h1 class="judul">PRIMARY KEY</h1>
+                  <p class="paragraf">
+                    PRIMARY KEY digunakan sebagai identifier unik untuk setiap record dan tidak boleh mengandung nilai NULL
+                  </p>
+                  <p class="paragraf">
+                    Cara penulisan
+                  </p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">CREATE TABLE nama_table (</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;field1 tipe_data,</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;field2 tipe_data,</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;field3 tipe_data</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;PRIMARY KEY(field)</p>
+                    <p class="text-base font-mono text-slate-600">);</p>
+                  </div>
+                  <p class="paragraf">
+                    Karena PRIMARY KEY harus bernilai unik maka untuk table mahasiswa yang bisa digunakan sebagai PRIMARY KEY adalah field
+                    NIM
+                  </p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600"><span class="text-violet-700">CREATE TABLE</span>
+                      mahasiswa (</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;nim <span class="text-violet-700">INT</span>(<span
+                        class="text-blue-500">10</span>),</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;nama <span class="text-violet-700">VARCHAR</span>(<span
+                        class="text-blue-500">100</span>),</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;alamat <span class="text-violet-700">VARCHAR</span>(<span
+                        class="text-blue-500">100</span>)</p>
+                    <p class="text-base font-mono text-slate-600">&nbsp;<span class="text-violet-700">PRIMARY KEY</span>(<span
+                        class="text-blue-500">nim</span>)</p>
+                    <p class="text-base font-mono text-slate-600">);</p>
+                  </div>
+                  <h1 class="text-2xl font-bold text-start text-slate-900 mb-2">2 Perintah ALTER</h1>
+                  <p class="paragraf">Perintah <strong>ALTER</strong> Untuk merubah struktur table seperti menambah, merubah, menghapus kolom</p>
+                  <h1 class="judul">Menambah kolom table</h1>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">ALTER TABLE nama_table</p>
+                    <p class="text-base font-mono text-slate-600">ADD nama_field tipe_data</p>
+                  </div>
+                  <p class="paragraf">Contoh menambah field <strong>umur</strong> di table <strong>mahasiswa</strong></p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600"><span class="text-violet-700">ALTER TABLE</span> mahasiswa</p>
+                    <p class="text-base font-mono text-slate-600"><span class="text-violet-700">ADD</span> umur INT (<span class="text-blue-500">10</span>)</p>
+                  </div>
+                  <h1 class="judul">Modifikasi kolom table</h1>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">ALTER TABLE nama_table</p>
+                    <p class="text-base font-mono text-slate-600">MODIFY nama_field tipe_data</p>
+                  </div>
+                  <p class="paragraf">Contoh merubah tipe data <strong>alamat</strong> dari varchar(100) menjadi varchar(200)</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600"><span class="text-violet-700">ALTER TABLE</span> mahasiswa</p>
+                    <p class="text-base font-mono text-slate-600">MODIFY COLUMN alamat umur <span class="text-violet-700">VARCHAR</span> (<span
+                        class="text-blue-500">150</span>)</p>
+                  </div>
+                  <h1 class="judul">Menghapus kolom table</h1>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">ALTER TABLE nama_table</p>
+                    <p class="text-base font-mono text-slate-600">DROP nama_field tipe_data</p>
+                  </div>
+                  <p class="paragraf">Contoh menghapus field <strong>umur</strong></p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600"><span class="text-violet-700">ALTER TABLE</span> mahasiswa</p>
+                    <p class="text-base font-mono text-slate-600"><span class="text-violet-700">DROP</span> umur</p>
+                  </div>
+                  <h1 class="text-2xl font-bold text-start text-slate-900 mb-2">3 Perintah TRUNCATE</h1>
+                  <p class="paragraf">Perintah <strong>TRUNCATE</strong> digunakan untuk menghapus semua record di database</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">TRUNCATE TABLE nama_table</p>
+                  </div>
+                  <p class="paragraf">Misal tabel <strong>mahasiswa</strong> telah mempunyai record dan kita ingin menghapus recordnya</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">TRUNCATE <span class="text-violet-700">TABLE</span> mahasiswa</p>
+                  </div>
+                  <h1 class="text-2xl font-bold text-start text-slate-900 mb-2">4 Perintah DROP</h1>
+                  <p class="paragraf">Perintah <strong>DROP</strong> digunakan untuk menghapus table atau database</p>
+                  <p class="paragraf">Jika ingin menghapus table</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">DROP TABLE nama_table</p>
+                  </div>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600"><span class="text-violet-700">DROP TABLE</span> mahasiswa</p>
+                  </div>
+                  <p class="paragraf">Jika ingin menghapus database</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">DROP DATABASE nama_database</p>
+                  </div>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600"><span class="text-violet-700">DROP DATABASE</span> universitas</p>
+                  </div>
+                  <h1 class="text-2xl font-bold text-start text-slate-900 mb-2">5 Perintah RENAME</h1>
+                  <p class="paragraf">Perintah <strong>RENAME</strong> digunakan untuk merubah nama table</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                    <p class="text-base font-mono text-slate-600">RENAME TABLE nama_table_lama to nama_table_baru</p>
+                  </div>
+                  <p class="paragraf">Contoh merubah table mahasiswa menjadi siswa</p>
+                  <div class="text-start px-4 py-3 bg-slate-100 mb-6 md:mb-8">
+                    <p class="text-base font-mono text-slate-600">RENAME <span class="text-violet-700">TABLE</span> mahasiswa to siswa</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="w-full px-4">
+          <div
+            class="max-w-4xl flex flex-wrap bg-white rounded-lg justify-center border mx-auto text-center mb-10 shadow-md">
+            <div class="w-full flex mx-2 mt-3 md:mx-8 lg:mx-10">
+              <h1 class="mx-4 text-base font-semibold md:text-lg lg:text-xl mt-3">Daftar Isi: </h1>
+            </div>
+            <span class="w-5/6 h-[2px] bg-slate-300 mt-5 mb-5 md:mb-8 "></span>
+            <div class="w-full flex mx-2 md:mx-8 lg:mx-10 mb-5">
+              <div class="w-full mx-3 flex flex-wrap justify-start">
+                <a href="mysql-materi-1.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  1: Cara Install XAMPP
+                </a>
+                <a href="mysql-materi-2.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  2: Tutorial MySQL untuk Pemula
+                </a>
+                <button type="button" disabled
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base text-white border bg-blue-600 shadow-md ">
+                  3: Memahami Perintah DDL
+                </button>
+                <a href="mysql-materi-4.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  4: Memahami Perintah DML
+                </a>
+                <a href="mysql-materi-5.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  5: Memahami Perintah DQL
+                </a>
+                <a href="mysql-materi-6.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  6: Memahami Perintah DCL
+                </a>
+                <a href="mysql-materi-7.html"
+                  class="w-full mb-2 text-start py-2 px-5 rounded-lg text-sm md:text-base bg-slate-100 text-slate-600 hover:text-white border hover:bg-blue-600 hover:shadow-md transition duration-200 ease-in-out">
+                  7: Memahami Perintah TCL
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="bg-slate-700 py-8 px-4 text-sm md:text-base text-white text-center">
+      Dibuat dengan penuh cinta by MahasiswaKupuKupu😁
+    </footer>
+
+    <script src="../../dist/js/script.js"></script>
+  </body>
+
+</html>
