@@ -87,47 +87,88 @@
                                     Apa itu Algoritma?
                                 </h1>
                                 <p class="paragraf">
-                                    1. Algoritma : urutan langkah-langkah logis penyelesaian masalah
-                                    yang disusun secara Sistematis dan Logis. <br>
-                                    2. Sistimatis : urutan langkah-langkah yang disusun harus jelas, memiliki pola
-                                    tertentu. <br>
-                                    3. Logis : masuk akal, bisa dibaca dan diterima oleh akal.
-                                    <br>
-                                    4. Bisa dinilai benar salahnya.
+                                <div class="text-start px-1 py-2 bg-slate-100 mb-3 md:mb-6">
+                                    <span class="text-base font-mono text-slate-600">
+                                        <ol>
+                                            <li> <b>Algoritma </b>-> urutan
+                                                langkah-langkah logis penyelesaian masalah
+                                                yang disusun secara Sistematis dan Logis.</li>
+                                            <li><b>Sistimatis</b> -> urutan langkah-langkah yang disusun harus jelas,
+                                                memiliki pola
+                                                tertentu</li>
+                                            <li><b>Logis</b> -> masuk akal, bisa dibaca dan diterima oleh akal.</li>
+                                            <li><b>Pasti </b> -> Bisa dinilai benar salahnya.</li>
+                                        </ol>
+                                    </span>
+
+                                </div>
                                 </p>
                                 <h1 class="judul">Struktur Algoritma.</h1>
-                                <p class="paragraf">1. Runtutan/sekuensial<br>
-                                    Digunakan untuk program yang pernyataannya sequential atau urutan.
-                                    <br>2. Pemilihan<br>
-                                    Digunakan untuk program yang menggunakan pemilihan atau penyelesaian kondisi.
-                                    <br>3. Perulangan
-                                    <br> Digunakan untuk program yang peryataannya akan dieksekusi berulang-ulang.
+                                <p class="paragraf">
+                                    <b> 1. Runtutan/sekuensial</b><br>
+                                    <span style="padding-left:20px"> Digunakan untuk program yang pernyataannya
+                                        sequential atau urutan.
+                                        <br>
+                                        <b>2. Pemilihan </b><br>
+                                        <span style="padding-left:20px"></span>Digunakan untuk program yang menggunakan
+                                        pemilihan atau penyelesaian kondisi.
+                                        <br>
+                                        <b>3. Perulangan</b>
+                                        <br> <span style="padding-left:20px">Digunakan untuk program yang peryataannya
+                                            akan dieksekusi berulang-ulang.
                                 </p>
                                 <h1 class="judul">Fungsi Input </h1>
                                 <p class="paragraf">
-                                    1. Untuk membaca input dari keyboard menggunakan library Scanner yang di import
-                                    kedalam program java. <br>
-                                    2. Caranya dengan menuliskan perintah import.java.util.Scanner di baris paling atas
-                                    <br> 3. Setelah itu tambahkan perintah deklarasi Scanner didalam fungsi main
-                                    Scanner sc = new Scanner (System.in);
-                                    Untuk nama scanner bebas , bisa menggunakan sc, input ataupun yang lainnya.
-                                    <br> 4. Selanjutnya untuk menginputkan data dapat dilakukan dengan menuliskan nama
-                                    scanner kemudian ditambah dengan nextTipedata() ;
+                                <ol>
+                                    <li> Untuk membaca input dari keyboard menggunakan library Scanner yang di import
+                                        kedalam program java. </li>
+                                    <li>Caranya dengan menuliskan perintah <span
+                                            class="text-base bg-slate-100 font-mono text-violet-700">
+                                            import.java.util.Scanner </span> di baris paling atas
+                                    </li>
+                                    <li>Setelah itu tambahkan perintah deklarasi Scanner didalam fungsi main <br>
+                                        <div class="text-start px-4 py-3 bg-slate-100 mb-3 md:mb-6">
+                                            <p class="text-base font-mono text-slate-600"><span
+                                                    class="text-violet-700">Scanner</span> sc = new Scanner <span
+                                                    class="text-blue-500">(System.in)</span>;</p>
+                                        </div>Untuk nama scanner bebas , bisa
+                                        menggunakan sc, input ataupun yang lainnya.
+                                    </li>
+                                    <li>Selanjutnya untuk menginputkan data dapat dilakukan dengan menuliskan nama
+                                        scanner kemudian ditambah dengan nextTipedata() ; <br>
+                                        Contoh: <br> <span
+                                            class="text-base bg-slate-100 font-mono text-violet-700"><span
+                                                class="text-blue-500">int</span> nama = sc. <span class="text-blue-500">
+                                                nextInt()</span>;</span> </li>
+                                </ol>
+
                                 </p>
                                 <h1 class="judul">Fungsi Output </h1>
                                 <p class="paragraf">Untuk menampilkan output ke layar, ada beberapa cara
                                     <br>
-                                    • Menggunakan System.out.print();
-                                    <br>->Menampilkan ouput apa adanya.
-                                    • Menggunakan System.out.println();
-                                    <br>->Menampilkan output dengan ditambah garis baru.
-                                    • Menggunakan System.out.printf();
-                                    <br>->Menampilkan output menggunakan format
-                                    <br><br> %s : Untuk menampilkan tipe data berupa String
-                                    <br> %d : Untuk menampilkan tipe data berupa angka / desimal
-                                    <br> %f : Untuk menampilkan tipe data berupa pecahan
-                                    <br> %n atau \n: Untuk menambahkan baris baru
-
+                                <ul>
+                                    <li><span
+                                            class="text-base bg-slate-100 font-mono text-violet-700">System.out.print();</span>
+                                        <br>
+                                        Menampilkan ouput apa adanya.
+                                    </li>
+                                    <li><span
+                                            class="text-base bg-slate-100 font-mono text-blue-500">System.out.println();</span>
+                                        <br>
+                                        -Menampilkan output dengan ditambah garis baru.
+                                    </li>
+                                    <li><span
+                                            class="text-base bg-slate-100 font-mono text-violet-700">System.out.printf();</span>
+                                        <br>
+                                        Menampilkan output menggunakan format
+                                        <ul class="bg-slate-100">
+                                            <li>%s : Untuk menampilkan tipe data berupa String</li>
+                                            <li>%d : Untuk menampilkan tipe data berupa angka / desimal</li>
+                                            <li>%f : Untuk menampilkan tipe data berupa pecahan</li>
+                                            <li>%n atau \n: Untuk menambahkan baris baru</li>
+                                        </ul>
+                                    </li>
+                                </ul>
                                 </p>
                             </div>
                         </div>

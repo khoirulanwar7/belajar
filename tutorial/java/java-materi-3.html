@@ -86,49 +86,92 @@
                                 <h1 class="judul">
                                     Variabel dan Tipe Data
                                 </h1>
-                                <h1 class="judul">1. Definisi</h1>
+
                                 <p class="paragraf">
-                                    Variabel adalah tempat menyimpan nilai sementara yang nantinya akan digunakan
-                                    kembali, terbagi menjadi dua, yaitu variabel lokal dan variabel global.Variabel
-                                    lokal adalah variabel yang hanya bisa dikenali pada sub program, sedangkan variabel
-                                    global dapat dikenali pada keseluruhan program. Dalam variabel terdapat tipe data
-                                    dan nama variabel.
+                                    <span style="padding-left:30px">Variabel adalah tempat menyimpan nilai sementara
+                                        yang nantinya akan digunakan
+                                        kembali, terbagi menjadi dua, yaitu variabel lokal dan variabel global.Variabel
+                                        lokal adalah variabel yang hanya bisa dikenali pada sub program, sedangkan
+                                        variabel
+                                        global dapat dikenali pada keseluruhan program. Dalam variabel terdapat tipe
+                                        data
+                                        dan nama variabel.
                                 </p>
-                                <h1 class="judul">2. Tipe data adalah jenis data yang tersimpan dalam variabel</h1>
+                                <h1 class="judul">Tipe data </h1>
+
                                 <p class="paragraf">
-                                    • char : karakter (contoh : ‘A’)
-                                    <br>• int, short, byte,long : angka atau bilangan bulat (contoh : 1 dan 23)
-                                    <br>• float, double: bilangan desimal (contoh :2.4)
-                                    <br>• String : teks (contoh : “rumah”, “sekolah”)
-                                    <br>• boolean : tipe data yang nilainya hanya berupa true dan false
+                                    <span style="padding-left:30px">adalah jenis data yang tersimpan dalam variabel
+                                        <div class="bg-slate-100">
+                                            <ul>
+                                                <li> <span class="text-blue-500 font-mono"> char </span>: karakter
+                                                    (contoh : ‘A’)</li>
+                                                <li><span class="text-violet-700 font-mono ">int, short,
+                                                        byte,long</span> : angka atau
+                                                    bilangan bulat (contoh : 1 dan 23)
+                                                </li>
+                                                <li><span class="text-blue-500 font-mono">float, double</span>: bilangan
+                                                    desimal
+                                                    (contoh :2.4)</li>
+                                                <li><span class="text-violet-700 font-mono">String </span> : teks
+                                                    (contoh : “rumah”,
+                                                    “sekolah”)</li>
+                                                <li><span class="text-blue-500 font-mono">boolean</span> : tipe data
+                                                    yang nilainya
+                                                    hanya berupa true dan false</li>
+                                            </ul>
+                                        </div>
                                 </p>
 
-                                <h1 class="judul">3. Penulisan Variabel</h1>
-                                <p class="paragraf">Format penulisan : (tipe data) namaVariabel ;
+                                <h1 class="judul">Penulisan Variabel</h1>
+                                <p class="paragraf">Format penulisan : <br>
+                                    <span class="text-base bg-slate-100 font-mono text-violet-700">
+                                        <span class="text-blue-500">(tipe data)</span> namaVariabel;</span>
                                     <br>Contoh : <br>
-                                    1. Membuat deklarasi variabel yang belum ada nilainya :
-                                    int namaVariabel ; <br>
-                                    untuk mengisi variabel yang belum terdapat nilainya dapat dilakukan dengan
-                                    namaVariabel = nilaiVariabel
-                                    contoh : <br> int angka; <br>
-                                    angka = 27 ;
-                                    <br>- Membuat deklarasi variabel yang sudah terdapat nilainya
-                                    int namaVaribel = 24;
-                                    <br>- Membuat deklarasi variabel yang memiliki tipe data sama
-                                    int angka,umur,nomor;
                                 </p>
-                                <h1 class="judul">4. Konversi Tipe Data</h1>
-                                <p class="paragraf">
-                                    > Konversi string menjadi integer
-                                    <br>1. Menggunakan Integer.parseInt(variabelYangAkanDikonversi)
-                                    > Konversi dari tipe data apa saja ke tipe data int ;
-                                    <br>
-                                    1. Menggunakan Integer.parseInt(variabelYangAkanDikonversi)
-                                    <br>2. Menggunakan Integer.valueOf (2.1);
-                                    <br>3. Objek.toInt();
-                                    <br>4. (int) namaVariabelYangAkanDikonversi;
+                                <ol>
+                                    <li>Membuat deklarasi variabel yang belum ada nilainya : <br>
+                                        <span class="text-base bg-slate-100 font-mono text-violet-700">
+                                            <span class="text-blue-500">int</span> angka;</span>
+                                    </li>
+                                    <li>untuk mengisi variabel yang belum terdapat nilainya dapat dilakukan dengan
 
-                                </p>
+                                        <span class="text-base bg-slate-100 font-mono text-violet-700"> <br>
+                                            <span class="text-blue-500">angka</span>= 27;</span>
+                                    </li>
+                                    <li>Membuat deklarasi variabel yang memiliki tipe data sama <br>
+                                        <span class="text-base bg-slate-100 font-mono text-violet-700">
+                                            <span class="text-blue-500">int</span> angka,umur,nomor;</span>
+                                    </li>
+                                </ol>
+
+                                <h1 class="judul">Konversi Tipe Data</h1>
+                                <ul>
+                                    <li>Konversi string menjadi integer <br>
+                                        <span class="text-base bg-slate-100 font-mono text-violet-700">
+                                            <span class="text-blue-500">Integer.</span>parseInt</span><span
+                                            class="text-violet-700">(namaVariabel)</span>
+                                    </li>
+
+                                    <li>Konversi tipe data apa saja ke tipe data int <br><br>
+                                        <ol>
+                                            <li><span class="text-base bg-slate-100 font-mono text-violet-700">
+                                                    <span class="text-blue-500">Integer.</span>parseInt</span><span
+                                                    class="text-violet-700">(namaVariabel)</span>
+                                            </li>
+                                            <li><span class="text-base bg-slate-100 font-mono text-violet-700">
+                                                    <span class="text-blue-500">Integer.</span>valueOf</span><span
+                                                    class="text-violet-700">(2.1)</span>
+                                            </li>
+                                            <li><span class="text-base bg-slate-100 font-mono text-violet-700">
+                                                    <span class="text-blue-500">Objek.</span>toInt();</span>
+                                            </li>
+                                            <li><span class="text-base bg-slate-100 font-mono text-violet-700">
+                                                    <span class="text-blue-500">(int) namaVariabel;</span>
+                                            </li>
+                                        </ol>
+
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
